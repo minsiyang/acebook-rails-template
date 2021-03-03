@@ -7,19 +7,19 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'bootstrap_form'
+gem 'bootstrap_form', '>= 4.4.0'
 
 gem 'bootstrap', '~> 4.5.0'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.1'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.8'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -40,7 +40,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rubocop', require: false
   gem 'selenium-webdriver'
   gem 'simplecov'
@@ -50,7 +50,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 3.5.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -60,9 +60,9 @@ gem 'travis'
 
 ruby '2.5.0'
 
-gem 'devise'
+gem 'devise', '>= 4.7.2'
 
-gem 'factory_bot_rails'
+gem 'factory_bot_rails', '>= 6.1.0'
 
 gem 'coveralls', require: false
 
