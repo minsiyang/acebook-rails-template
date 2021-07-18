@@ -39,7 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
+  gem 'capybara', '~> 2.18', '>= 2.18.0'
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop', require: false
   gem 'selenium-webdriver'
@@ -56,7 +56,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-gem 'travis'
+gem 'travis', '>= 1.9.1'
 
 ruby '2.5.0'
 
